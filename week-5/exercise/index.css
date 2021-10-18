@@ -153,16 +153,48 @@
 .smoke-1 {
   top: -25px;
   right: 44px;
+
+  opacity: 0;
+  animation: smoke 3s ease-in-out infinite;
 }
 
 .smoke-2 {
   top: -25px;
   right: 42px;
+
+  opacity: 0;
+  animation: smoke 3s ease-in-out .7s infinite;
 }
 
 .smoke-3 {
   top: -25px;
   right: 49px;
+
+  opacity: 0;
+  animation: smoke 3s ease-in-out 1s infinite normal;
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 0;
+    transform: translateX(0) translateY(0) scale(1);
+    box-shadow: 0 0 1px 0 #fff;
+  }
+  25% {
+    opacity: 1;
+    transform: translateX(0) translateY(-5px) scale(1.1);
+    box-shadow: 0 0 3px 1px #fff;
+  }
+  50% {
+    opacity: .1;
+    transform: translateX(5px) translateY(-20px) scale(1.5);
+    box-shadow: 0 0 5px 3px #fff;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10px) translateY(-30px) scale(2);
+    box-shadow: 0 0 7px 5px #fff;
+  }
 }
 
 .sun {
