@@ -1,0 +1,21 @@
+body {
+  height: 10000px;
+}
+
+.hint {
+  position: fixed;
+  right: 25px;
+  top: 25px;
+  border: 1px solid green;
+  padding: 10px 10px 20px;
+  width: 150px;
+}
+
+.submit {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background-color: green;
+  border: none;
+  color: #fff;
+}
