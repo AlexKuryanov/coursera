@@ -193,18 +193,18 @@ body {
   }
 
   #sl-eggplant:checked~.slider__list {
-  transform: translateX(-1005px);
-}
+    transform: translateX(-1005px);
+  }
 
-#sl-pepper:checked~.slider__list {
-  transform: translateX(-2008px);
-}
+  #sl-pepper:checked~.slider__list {
+    transform: translateX(-2008px);
+  }
 
-#sl-squash:checked~.slider__list {
-  transform: translateX(-3010px);
-}
+  #sl-squash:checked~.slider__list {
+    transform: translateX(-3010px);
+  }
 
-#sl-raspberries:checked~.slider__list {
-  transform: translateX(-4010px);
-}
+  #sl-raspberries:checked~.slider__list {
+    transform: translateX(-4010px);
+  }
 }
