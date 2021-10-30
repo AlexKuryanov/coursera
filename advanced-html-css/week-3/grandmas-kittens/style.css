@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.header {
+  padding: 25px 0;
+  background-color: #ebebeb;
+
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.header__title {
+  font-weight: bold;
+  letter-spacing: 2.4px;
+}
+
+/* Content styles */
+.content {
+  display: flex;
+  min-height: calc(100vh - 213px);
+}
+
+/* Footer styles */
+.footer {
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
+  padding: 20px 50px;
+  margin-top: auto;
+}
+
+.footer__contacts {
+  color: #1634a3;
+}
