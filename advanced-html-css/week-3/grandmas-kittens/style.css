@@ -9,6 +9,7 @@ body {
 /* Header styles */
 .header {
   padding: 25px 0;
+
   text-align: center;
   font-size: 1.3rem;
 }
@@ -49,6 +50,35 @@ body {
 .menu__item:focus {
   background-color: #5a5a5a;
   color: #fff;
+}
+
+.rating {
+  width: 200px;
+  background-color: #d9d9d9;
+  margin-left: auto;
+  padding: 0 10px;
+  align-self: flex-start;
+}
+
+.section__title {
+  font-weight: normal;
+  color: #f00;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px 10px 0;
+}
+
+.sort {
+  display: block;
+  font-size: 0.7rem;
+  text-align: right;
+}
+
+.sort__input {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  padding-right: 10px;
 }
 
 /* Footer styles */
