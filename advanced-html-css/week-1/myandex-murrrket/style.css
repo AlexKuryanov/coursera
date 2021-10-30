@@ -86,7 +86,6 @@ body {
 .content {
   width: 90vw;
   margin: 0 auto;
-  text-align: center;
 }
 
 .article {
@@ -106,12 +105,15 @@ body {
   transition: all .25s linear;
 }
 
-.article__img:hover {
-  opacity: .7;
-}
-
 .article__title-group {
   text-align-last: left;
+}
+
+.article__title-group:hover .article__img,
+.article__title-group:hover .article__link {
+  opacity: .7;
+  color: #f00;
+  cursor: pointer;
 }
 
 .article__title {
@@ -130,10 +132,6 @@ body {
 .article__subtitle {
   margin-top: 9px;
   color: #6ca6e7;
-}
-
-.article__link:hover {
-  color: #f00;
 }
 
 .article__price {
