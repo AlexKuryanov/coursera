@@ -24,14 +24,30 @@
     </section>
     <section class="cards"></section>
     <section class="rating">
-      <h2 class="section__title">Рейтинг</h2>
-      <label for="sort" class="sort">по убыванию
-        <input type="checkbox" name="sort" id="sort" class="sort__input"></label>
-      <div class="wrapper">
-        <p class="rating__item">9</p>
-        <p class="rating__item">8</p>
-        <p class="rating__item">10</p>
-        <p class="rating__item">4</p>
+      <h2 class="rating__title">Рейтинг</h2>
+      <label for="sort" class="rating__label">по убыванию</label>
+      <input type="checkbox" name="sort" id="sort" class="rating__input">
+      <div class="rating__wrapper">
+        <div class="rating__item" data-value="9">
+          <label class="rating__name" for="one">Абиссинская</label>
+          <meter class="rating__bar" id="one" max="100" value="90"></meter>
+          <span class="rating__value">9</span>
+        </div>
+        <div class="rating__item" data-value="8">
+          <label class="rating__name" for="two">Британская</label>
+          <meter class="rating__bar" id="two" max="100" value="80"></meter>
+          <span class="rating__value">8</span>
+        </div>
+        <div class="rating__item" data-value="10">
+          <label class="rating__name" for="three">Русская голубая</label>
+          <meter class="rating__bar" id="three" max="100" value="100"></meter>
+          <span class="rating__value">10</span>
+        </div>
+        <div class="rating__item" data-value="4">
+          <label class="rating__name" for="four">Сиамская</label>
+          <meter class="rating__bar" id="four" max="100" value="40"></meter>
+          <span class="rating__value">4</span>
+        </div>
       </div>
     </section>
   </main>
