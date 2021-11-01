@@ -196,7 +196,7 @@ meter {
 
 #four {
   width: calc(125px - 60%);
-  background: linear-gradient(90deg, #ec3430, #fdfffe);;
+  background: linear-gradient(90deg, #ec3430, #fdfffe);
 }
 
 .rating__value {
@@ -204,8 +204,7 @@ meter {
   margin-left: auto;
 }
 
-#sort:checked ~ .rating__wrapper > .rating__item {
-
+#sort:checked~.rating__wrapper>.rating__item {
   order: var(--value);
 }
 
