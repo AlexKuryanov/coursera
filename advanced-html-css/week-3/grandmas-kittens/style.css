@@ -28,6 +28,7 @@ body {
   margin-bottom: 50px;
 }
 
+/* Menu styles */
 .menu {
   width: 150px;
   background-color: #d9d9d9;
@@ -52,6 +53,60 @@ body {
   color: #fff;
 }
 
+/* Cards styles */
+.cards {
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0 10px;
+}
+
+.cards__list {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.first {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.second {
+  grid-area: 1 / 2 / 2 / 4;
+}
+
+.third {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.fourth {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.fifth {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.sixth {
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+.seventh {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.eighth {
+  grid-area: 4 / 1 / 5 / 4;
+}
+
+/* Rating styles */
 .rating {
   width: 150px;
   background-color: #d9d9d9;
