@@ -219,10 +219,14 @@ meter {
 
 /* Footer styles */
 .footer {
-  display: flex;
-  justify-content: space-between;
   border-top: 2px solid #d9d9d9;
   padding: 20px 50px;
+}
+
+.footer__inner {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__contacts {
