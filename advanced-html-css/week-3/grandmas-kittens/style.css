@@ -23,9 +23,10 @@ body {
 .content {
   max-width: 1440px;
   margin: 0 auto;
-  display: flex;
-  min-height: calc(100vh - 263px);
+  display: grid;
+  grid-template-columns: 180px 1fr 180px;
   margin-bottom: 50px;
+  padding: 0 10px;
 }
 
 /* Menu styles */
