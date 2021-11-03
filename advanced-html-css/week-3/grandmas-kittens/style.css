@@ -65,15 +65,16 @@ body {
 
 .cards__list {
   display: grid;
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 6px;
   width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.cards__item {
-  max-height: 250px;
+.cards__item img {
+  width: 100%;
   object-fit: cover;
 }
 
