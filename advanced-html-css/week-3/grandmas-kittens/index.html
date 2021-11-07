@@ -15,14 +15,18 @@
   </header>
   <main class="content">
     <section class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">Абиссинская</li>
-        <li class="menu__item">Британская</li>
-        <li class="menu__item">Русская голубая</li>
-        <li class="menu__item">Сиамская</li>
-      </ul>
+      <label class="menu__item" for="all">Все породы</label>
+      <label class="menu__item" for="abissyn">Абиссинская</label>
+      <label class="menu__item" for="britan">Британская</label>
+      <label class="menu__item" for="russian-blue">Русская голубая</label>
+      <label class="menu__item" for="siam">Сиамская</label>
     </section>
     <section class="cards">
+      <input class="menu-radio input-all" type="radio" name="breed" id="all" checked>
+      <input class="menu-radio input-abissyn" type="radio" name="breed" id="abissyn">
+      <input class="menu-radio input-britain" type="radio" name="breed" id="britan">
+      <input class="menu-radio input-russian-blue" type="radio" name="breed" id="russian-blue">
+      <input class="menu-radio input-siam" type="radio" name="breed" id="siam">
       <ul class="cards__list">
         <li class="cards__item first russian-blue">
           <span class="cards__desc">Вася, 5 лет</span>

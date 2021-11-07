@@ -40,6 +40,10 @@ body {
   flex-direction: column;
 }
 
+.menu-radio {
+  display: none;
+}
+
 .menu__item {
   padding: 25px 10px;
   border-bottom: 1px solid #fff;
@@ -47,10 +51,23 @@ body {
   cursor: pointer;
 }
 
-.menu__item:hover,
-.menu__item:focus {
+.menu__item:hover {
   background-color: #5a5a5a;
   color: #fff;
+}
+
+.input-abissyn:checked ~ .cards__list li:not(.abissyn),
+.input-britain:checked ~ .cards__list li:not(.britain),
+.input-russian-blue:checked ~ .cards__list li:not(.russian-blue),
+.input-siam:checked ~ .cards__list li:not(.siam) {
+  opacity: .3;
+}
+
+.input-abissyn:checked ~ .cards__list li:not(.abissyn) .cards__desc,
+.input-britain:checked ~ .cards__list li:not(.britain) .cards__desc,
+.input-russian-blue:checked ~ .cards__list li:not(.russian-blue) .cards__desc,
+.input-siam:checked ~ .cards__list li:not(.siam) .cards__desc {
+  display: none;
 }
 
 /* Cards styles */
@@ -64,15 +81,27 @@ body {
   display: grid;
   column-gap: 10px;
   row-gap: 6px;
-  width: 100%;
+  max-width: 100%;
   list-style: none;
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
+}
+
+.cards__list:last-child {
+  margin-bottom: 0;
+}
+
+.cards__item {
+  position: relative;
 }
 
 .cards__item img {
   width: 100%;
   object-fit: cover;
+  height: 100%;
+}
+
 .cards__item .cards__desc {
   display: block;
   position: absolute;
@@ -121,6 +150,7 @@ body {
   grid-area: 4 / 1 / 5 / 4;
 }
 
+
 /* Rating styles */
 .rating {
   width: 180px;
@@ -146,13 +176,13 @@ body {
 }
 
 .rating__input {
-      appearance: none;
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    border: .5px solid gray;
-    vertical-align: top;
-    background-color: #ececec;
+  appearance: none;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: .5px solid gray;
+  vertical-align: top;
+  background-color: #ececec;
 }
 
 .rating__input:checked {
