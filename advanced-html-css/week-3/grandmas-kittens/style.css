@@ -33,9 +33,6 @@ body {
 .menu {
   width: 180px;
   background-color: #d9d9d9;
-}
-
-.menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -76,6 +73,20 @@ body {
 .cards__item img {
   width: 100%;
   object-fit: cover;
+.cards__item .cards__desc {
+  display: block;
+  position: absolute;
+  bottom: 25px;
+  left: 2px;
+  background-color: rgba(0, 0, 0, .3);
+  color: #fff;
+  padding: 10px 15px;
+  opacity: 0;
+  transition: opacity .25s linear;
+}
+
+.cards__item:hover .cards__desc {
+  opacity: 1;
 }
 
 .first {
