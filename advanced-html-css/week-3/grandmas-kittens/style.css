@@ -80,7 +80,7 @@ body {
 .cards__list {
   display: grid;
   column-gap: 10px;
-  row-gap: 6px;
+  row-gap: 10px;
   max-width: 100%;
   list-style: none;
   margin: 0;
